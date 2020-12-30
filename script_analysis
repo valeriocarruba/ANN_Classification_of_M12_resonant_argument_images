@@ -1,0 +1,36 @@
+# -*- coding: utf-8 -*-
+# ===========================================================================
+# ===========================================================================
+# !==   Valerio Carruba                                                    ==
+# !==   Safwan Aljbaae                                                  ==
+# !==   Descember 2020                                                     ==
+# ===========================================================================
+
+Runs="RUN_00"
+
+for Run in $Runs
+do
+   echo $Run
+   cd $Run
+   mkdir ALL_FIGURES/
+   Job=`ls -d -- 0*/`
+   for folder in $Job
+   do
+      echo "   $folder"
+      cd $folder
+      cp ../../CODES/* .
+      chmod +x *
+      ./follow_all_filtered < follow.in > follow_all_filtered.out
+      gfortran res_arg_m12.f -o arg_2 -O3	
+      ./arg_2 > arg_2.out
+      python3 plot_rez_id.py 
+      cp fig_res_* ../ALL_FIGURES/
+      python3 image_class_12.py > image_class_12.out
+      rm -f history_model.png model_plot.png fig_res_* res_arg_* el_osc_s25_* plan.dat follow_all.dat mars
+      rm -f *.inc swift_bs* plot_res_mult* follow* *.f weights.hdf5 arg_* script_prepare_sym script_run
+      cd ../
+   done
+   cd ../
+done   
+
+
