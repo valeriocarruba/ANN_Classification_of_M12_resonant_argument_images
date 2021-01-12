@@ -2,7 +2,7 @@
 A repository for the use of artificial neural networks to automatically classify images of the resonant argument of the M1:2 mean-motion resonance.
 The codes were developed for a Linux Ubuntu operating system, with gfortran, python3.8.5 and tensorflow installed.  They may be portability issues for other platforms.  In the main branch there is a UNIX script (script_analysis) that will automatically perform the analysis of images of resonant arguments for simulations in the RUN_00/01 directory. 
 
-A sample of 99 images of resonant arguments and their labels, used to train the neural networks, are available in the branch ALL_PNG_varpic.  The full database of 5700 images and labels used in Carruba et al. (2021), ..., can be downloaded from:
+A sample of 99 images of resonant arguments and their labels, used to train the neural networks, are available in the branch ALL_PNG_varpic.  A zip file containing the full database of 5700 images and labels used in Carruba et al. (2021), ..., can be downloaded from:
 
 https://drive.google.com/file/d/1RsDoMh8iMwZhD-fnkYSs9hiWmg96SZf0/view?usp=sharing . 
 
