@@ -5,12 +5,12 @@ The codes were developed for a Linux Ubuntu operating system, with gfortran, pyt
 A sample of 99 images of resonant arguments and their labels, used to train the neural networks, are available in the branch ALL_PNG_varpic.  A zip file containing the full database of 5700 images and labels used in Carruba et al. (2021), ..., can be downloaded from:
 
 ```
-https://drive.google.com/file/d/1RsDoMh8iMwZhD-fnkYSs9hiWmg96SZf0/view?usp=sharing . 
+https://drive.google.com/file/d/1RsDoMh8iMwZhD-fnkYSs9hiWmg96SZf0/view?usp=sharing. 
 ```  
 
 Or, alternately, using curl:
 
-```R
+```
 curl -c ./cookie -s -L "https://drive.google.com/uc?export=download&id=1RsDoMh8iMwZhD-fnkYSs9hiWmg96SZf0" > /dev/null
 
 curl -Lb ./cookie "https://drive.google.com/uc?export=download&confirm=`awk '/download/ {print $NF}' ./cookie`&id=1RsDoMh8iMwZhD-fnkYSs9hiWmg96SZf0" -o test.zip
@@ -20,7 +20,7 @@ And then unpacking the test.zip file. Several codes used for the numerical simul
 
 In order to run the model, users will only have to run the script, after changing its ṕermissions, using the following commands:
 
-```R
+```
 chmod+x script_analysis
 
 ./script_analysis
