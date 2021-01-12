@@ -4,7 +4,7 @@ The codes were developed for a Linux Ubuntu operating system, with gfortran, pyt
 
 A sample of 99 images of resonant arguments and their labels, used to train the neural networks, are available in the branch ALL_PNG_varpic.  A zip file containing the full database of 5700 images and labels used in Carruba et al. (2021), ..., can be downloaded from:
 
-```R
+```
 https://drive.google.com/file/d/1RsDoMh8iMwZhD-fnkYSs9hiWmg96SZf0/view?usp=sharing . 
 ```  
 
