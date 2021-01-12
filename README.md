@@ -20,6 +20,8 @@ And then unpacking the test.zip file. Several codes used for the numerical simul
 
 In order to run the model, users will only have to run the script, after changing its ṕermissions, using the following commands:
 
+```R
 chmod+x script_analysis
 
 ./script_analysis
+```  
