@@ -25,3 +25,4 @@ chmod+x script_analysis
 
 ./script_analysis
 ```  
+Questions and comments can be addressed to mlasb2021@gmail.com.
